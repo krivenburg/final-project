@@ -68,7 +68,7 @@
 
 								echo '<td>' . $row['reply_user'] . '</td>';
 
-								echo '<td>' . $row['reply_content'] . '</td>';
+								echo '<td style="width:100px">' . $row['reply_content'] . '</td>';
 
 								echo '<td>' . $row['reply_created_date'] . '</td>';
 
