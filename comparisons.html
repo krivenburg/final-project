@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Version Control Application Comparisons</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Customized CSS -->
+        <link href="css/g2g.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+	</head>
+    <body>
+    	<div class="container-full">
+    		<!-- row 1 -->
+    		<div class="head">
+	    		<div class="row">
+					<div class="col-lg-3 col-sm-2">
+						<a href="index.html"><img src="img/Geek.png" alt="Geek to Geek. A place to connect." class="img-responsive"></a>
+					</div>
+					<div class="col-lg-9 col-sm-10">
+						<h1>Version Control Application Comparisons</h1>
+					</div>
+			    </div>
+			</div>
+
+			<!-- row 2 -->
+			<div class="row">
+				<div class="col-lg-9 col-sm-10">
+					<ul class="nav nav-pills">
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a href="introduction.html"><span class="glyphicon glyphicon-book"></span> Introduction</a></li>
+						<li><a href="comparisons.html"><span class="glyphicon glyphicon-zoom-in"></span> Comparisons</a></li>
+						<li><a href="forum.php"><span class="glyphicon glyphicon-globe"></span> Forum</a></li>
+						<li><a href="register.html"><span class="glyphicon glyphicon-user"></span> User</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- row 3 -->
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="panel panel-default panel-g2g">
+						<div class="panel-heading">
+							<h3 class="panel-title">Version Control Applications</h3>
+							<!-- Tabs -->
+							<ul class="nav panel-tabs pull-right">
+								<li class="active"><a href="#tab1" data-toggle="tab">Description</a></li>
+								<li><a href="#tab2" data-toggle="tab">Git</a></li>
+								<li><a href="#tab3" data-toggle="tab">CVS</a></li>
+								<li><a href="#tab4" data-toggle="tab">SVN</a></li>
+								<li><a href="#tab5" data-toggle="tab">Mercurial</a></li>
+							</ul>
+						</div>
+
+						<div class="panel-body">
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="tab1">
+									<br>This page reviews some of the top open-source version control systems and tools that make setting up a version control system easy.
+								</div>
+								<div class="tab-pane fade" id="tab2">
+									<br><img src="img/git.png" alt="Git." class="pull-left img-responsive">
+									<p><strong>Git</strong> is the new fast-rising star of version control systems. Initially developed by Linux kernel creator Linus Torvalds, Git has recently
+									taken the Web development community by storm. Git offers a much different type of version control in that it's a distributed version
+									control system. With a distributed version control system, there isn't one centralized code base to pull the code from. Different branches
+									hold different parts of the code. Other version control systems, such as SVN and CVS, use centralized version control, meaning that only
+									one master copy of the software is used.
+									</p>
+									<p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed
+									and efficiency.Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS,
+									Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
+									</p>
+									<h4>Branching and Merging</h4>
+									<p>The Git feature that really makes it stand apart from nearly every other SCM out there is its branching model.Git allows and encourages you to
+									have multiple local branches that can be entirely independent of each other. The creation, merging, and deletion of those lines of development
+									takes seconds.
+									</p>
+									<p>This means that you can do things like:</p>
+									<ul>
+										<li><strong>Frictionless Context Switching.</strong> Create a branch to try out an idea, commit a few times, switch back to where you branched
+										    from, apply a patch, switch back to where you are experimenting, and merge it in.
+										</li>
+										<li><strong>Role-Based Codelines.</strong> Have a branch that always contains only what goes to production, another that you merge work into
+											for testing, and several smaller ones for day to day work.
+										</li>
+										<li><strong>Feature Based Workflow.</strong> Create new branches for each new feature you're working on so you can seamlessly switch back and
+											forth between them, then delete each branch when that feature gets merged into your main line.
+										</li>
+										<li><strong>Disposable Experimentation.</strong> Create a branch to experiment in, realize it's not going to work, and just delete it - abandoning
+											the work with nobody else ever seeing it (even if you've pushed other branches in the meantime).
+										</li>
+									</ul>
+									<h4>Small and Fast</h4>
+									<p><strong>Git is fast.</strong> With Git, nearly all operations are performed locally, giving it a huge speed advantage on centralized systems that
+									constantly have to communicate with a server somewhere. Git was built to work on the Linux kernel, meaning that it has had to effectively handle large
+									repositories from day one. Git is written in C, reducing the overhead of runtimes associated with higher-level languages. Speed and performance has been
+									a primary design goal of the Git from the start.
+									</p>
+									<p>One place where Git is slower is in the initial clone operation. Here, Git is downloading the entire history rather than only the latest version.
+									As seen in the above charts, it's not considerably slower for an operation that is only performed once.
+									</p>
+									<p>It's also interesting to note that the size of the data on the client side is very similar even though Git also has every version of every file for
+									the entire history of the project. This illustrates how efficient it is at compressing and storing data on the client side.
+									</p>
+									<h4>Distributed</h4>
+									<p>One of the nicest features of any Distributed SCM, Git included, is that it's distributed. This means that instead of doing a "checkout" of the current
+									tip of the source code, you do a "clone" of the entire repository.
+									</p>
+									<ul>
+										<li><strong>Multiple Backups</strong> This means that even if you're using a centralized workflow, every user essentially has a full backup of the main
+											server. Each of these copies could be pushed up to replace the main server in the event of a crash or corruption. In effect, there is no single
+											point of failure with Git unless there is only a single copy of the repository..
+										</li>
+										<li><strong>Any Workflow</strong> Because of Git's distributed nature and superb branching system, an almost endless number of workflows can be
+											implemented with relative ease.
+										</li>
+									</ul>
+									<h4>Data Assurance</h4>
+									<p>The data model that Git uses ensures the cryptographic integrity of every bit of your project. Every file and commit is checksummed and retrieved by
+									its checksum when checked back out. It's impossible to get anything out of Git other than the exact bits you put in.
+									</p>
+									<p>It is also impossible to change any file, date, commit message, or any other data in a Git repository without changing the IDs of everything after it.
+									This means that if you have a commit ID, you can be assured not only that your project is exactly the same as when it was committed, but that nothing in
+									its history was changed. Most centralized version control systems provide no such integrity by default.
+									</p>
+									<h4>Staging Area</h4>
+									<p>Unlike the other systems, Git has something called the "staging area" or "index". This is an intermediate area where commits can be formatted and
+									reviewed before completing the commit.
+									</p>
+									<p>One thing that sets Git apart from other tools is that it's possible to quickly stage some of your files and commit them without committing all of
+									the other modified files in your working directory or having to list them on the command line during the commit.
+									</p>
+									<p>This allows you to stage only portions of a modified file. Gone are the days of making two logically unrelated modifications to a file before you realized
+									that you forgot to commit one of them. Now you can just stage the change you need for the current commit and stage the other change for the next commit. This
+									feature scales up to as many different changes to your file as needed.
+									</p>
+									<p>Of course, Git also makes it easy to ignore this feature if you don't want that kind of control just add a '-a' to your commit command in order to add
+									all changes to all files to the staging area.
+									</p>
+									<h4>Free and Open Source</h4>
+									<p>Git is released under the <a href="http://opensource.org/licenses/GPL-2.0">GNU General Public License version 2.0</a>, which is an open source license. The
+									Git project chose to use GPLv2 to guarantee your freedom to share and change free software---to make sure the software is free for all its users.
+									</p>
+								</div>
+								<div class="tab-pane fade" id="tab3">
+									<br><img src="img/cvs.png" alt="CVS" class="pull-right img-responsive">
+									<p><strong>CVS</strong> -- or Concurrent Versioning System -- is the grandfather of revision control systems. It was first released in 1986, and Google Code still hosts the original Usenet post
+									announcing CVS. CVS is the de facto standard and is installed virtually everywhere. However, the code base isn't as fully featured as SVN
+									or other solutions.
+									</p>
+									<p>CVS is a system for managing simultaneous development of files. It is in common use in large programming projects, and is also useful to system administrators,
+									technical writers, and anyone who needs to manage files.
+									</p>
+									<p>CVS stores files in a central repository, set (using standard Unix permissions) to be accessible to all users of the files. Commands are given to "check out"
+									a copy of a file for development, and "commit" changes back to the repository. It also scans the files as they are moved to and from the repository, to prevent
+									one person's work from overwriting another's.
+									</p>
+									<p>This system ensures that a history of the file is retained, which is extremely useful when the boss decides he wants a feature you trashed months ago.
+									It also ensures that backing up the repository is enough to backup a project (providing all necessary files are kept in repository).
+									</p>
+									<p>CVS is usually used to help manage projects, but can also be used for individual files.
+									</p>
+									<h4>Typical Uses</h4>
+									<p>CVS is designed for developers, either individually or in teams. For individuals, CVS provides a repository from which you can work from home, the office, or
+									the client site without having to haul disks around. It also provides version control, allowing rollbacks without loss of data. For teams, it also keeps a record
+									of who changed which lines of a file and prevents direct overwriting of each other's work.
+									</p>
+									<p>System administrators can keep configuration files in CVS. You can make a change, cvs commit it, test it. If it fails, roll back the change -- even if you only
+									discover the failure six months down the track.
+									</p>
+									<p>Administrators can keep a CVS tree of the configurations for server farms. Adding a new server? Just cvs checkout the config tree for that type of server. Committing
+									all changes also helps you keep track of who did what, when.
+									</p>
+									<p>CVS is useful for writers. I keep these articles in a CVS tree -- if I lose my local copy, I have an automatic backup. It is also useful if I'm collaborating, or if
+									I discover that I need to retrieve a section I'd removed.
+									</p>
+									<h4>Features</h4>
+									<p>CVS uses a client-server architecture: a server stores the current version(s) of a project and its history, and clients connect to the server in order to "check out"
+									a complete copy of the project, work on this copy and then later "check in" their changes. Typically, the client and server connect over a LAN or over the Internet, but
+									client and server may both run on the same machine if CVS has the task of keeping track of the version history of a project with only local developers. The server software
+									normally runs on Unix (although at least the CVSNT server also supports various flavours of Microsoft Windows), while CVS clients may run on any major operating-system platform.
+									</p>
+									<p>Several developers may work on the same project concurrently, each one editing files within their own "working copy" of the project, and sending (or checking in) their
+									modifications to the server. To avoid the possibility of people stepping on each other's toes, the server only accepts changes made to the most recent version of a file.
+									Developers are therefore expected to keep their working copy up-to-date by incorporating other people's changes on a regular basis. This task is mostly handled automatically
+									by the CVS client, requiring manual intervention only when an edit conflict arises between a checked-in modification and the yet-unchecked local version of a file.
+									</p>
+									<p>If the check in operation succeeds, then the version numbers of all files involved automatically increment, and the CVS-server writes a user-supplied description line, the
+									date and the author's name to its log files. CVS can also run external, user-specified log processing scripts following each commit. These scripts are installed by an entry in
+									CVS's loginfo file, which can trigger email notification or convert the log data into a Web-based format.
+									</p>
+									<p>Clients can also compare versions, request a complete history of changes, or check out a historical snapshot of the project as of a given date or as of a revision number.
+									</p>
+								</div>
+								<div class="tab-pane fade" id="tab4">
+									<br><img src="img/svn.png" alt="Subversion" class="pull-left img-responsive">
+									<p><strong>Subversion</strong> (SVN) is probably the version control system with the widest adoption. Most open-source projects use Subversion as a repository because other larger
+									projects, such as SourceForge, Apache, Python, Ruby and many others, use it as well. Google Code uses Subversion exclusively to distribute code.
+									<p>Subversion is a free/open source version control system (VCS). That is, Subversion manages files and directories, and the changes made to them, over time. This allows
+									you to recover older versions of your data or examine the history of how your data changed. In this regard, many people think of a version control system as a sort of "time
+									machine".
+									</p>
+									<p>Subversion can operate across networks, which allows it to be used by people on different computers. At some level, the ability for various people to modify and manage
+									the same set of data from their respective locations fosters collaboration. Progress can occur more quickly without a single conduit through which all modifications must occur.
+									And because the work is versioned, you need not fear that quality is the trade-off for losing that conduit--if some incorrect change is made to the data, just undo that change.
+									</p>
+									<p>Some version control systems are also software configuration management (SCM) systems. These systems are specifically tailored to manage trees of source code and have many
+									features that are specific to software development--such as natively understanding programming languages, or supplying tools for building software. Subversion, however, is not
+									one of these systems. It is a general system that can be used to manage any collection of files. For you, those files might be source code--for others, anything from grocery
+									shopping lists to digital video mixdowns and beyond.
+									</p>
+									<h4>Subversion provides:</h4>
+									<p><strong>Directory versioning</strong></p>
+									<p>CVS only tracks the history of individual files, but Subversion implements a "virtual" versioned filesystem that tracks changes to whole directory trees over time. Files and
+									directories are versioned.
+									<p><strong>True version history</strong></p>
+									<p>Since CVS is limited to file versioning, operations such as copies and renames--which might happen to files, but which are really changes to the contents of some containing
+									directory--aren't supported in CVS. Additionally, in CVS you cannot replace a versioned file with some new thing of the same name without the new item inheriting the history of
+									the old--perhaps completely unrelated--file. With Subversion, you can add, delete, copy, and rename both files and directories. And every newly added file begins with a fresh,
+									clean history all its own.
+									</p>
+									<p><strong>Atomic commits</strong></p>
+									<p>A collection of modifications either goes into the repository completely, or not at all. This allows developers to construct and commit changes as logical chunks, and prevents
+									problems that can occur when only a portion of a set of changes is successfully sent to the repository.
+									</p>
+									<p><strong>Versioned metadata</strong></p>
+									<p>Each file and directory has a set of properties--keys and their values--associated with it. You can create and store any arbitrary key/value pairs you wish. Properties are
+									versioned over time, just like file contents.
+									</p>
+									<p><strong>Choice of network layers</strong></p>
+									<p>Subversion has an abstracted notion of repository access, making it easy for people to implement new network mechanisms. Subversion can plug into the Apache HTTP Server as an
+									extension module. This gives Subversion a big advantage in stability and interoperability, and instant access to existing features provided by that server—authentication, authorization,
+									wire compression, and so on. A more lightweight, standalone Subversion server process is also available. This server speaks a custom protocol which can be easily tunneled over SSH.
+									</p>
+									<p><strong>Consistent data handling</strong></p>
+									<p>Subversion expresses file differences using a binary differencing algorithm, which works identically on both text (human-readable) and binary (human-unreadable) files. Both types
+									of files are stored equally compressed in the repository, and differences are transmitted in both directions across the network.
+									</p>
+									<p><strong>Efficient branching and tagging</strong></p>
+									<p>The cost of branching and tagging need not be proportional to the project size. Subversion creates branches and tags by simply copying the project, using a mechanism similar to a
+									hard-link. Thus these operations take only a very small, constant amount of time.
+									</p>
+									<p><strong>Hackability</strong></p>
+									<p>Subversion has no historical baggage; it is implemented as a collection of shared C libraries with well-defined APIs. This makes Subversion extremely maintainable and usable by other
+									applications and languages.
+									</p>
+								</div>
+								<div class="tab-pane fade" id="tab5">
+			        	        	<br><img src="img/mercurial.png" alt="Mercurial" class="pull-right img-responsive">
+			        	        	<p><strong>Mercurial</strong> is another open-source distributed version control system, like Git. Mercurial was designed for larger projects, most likely outside
+			        	        	the scope of designers and independent Web developers. That doesn't mean that small development teams can't or shouldn't use it. Mercurial is
+			        	        	extremely fast, and the creators built the software with performance as the most important feature. The name "mercurial" is an adjective that
+			        	        	means "Relating to or having characteristics (eloquence, swiftness, cleverness) attributed to the god Mercury".
+			        	        	<p>Mercurial has a unique set of properties that make it a particularly good choice as a revision control system.
+									<ul>
+										<li>It is easy to learn and use.</li>
+										<li>It is lightweight.</li>
+										<li>It scales excellently</li>
+										<li>It is easy to customise.</li>
+									</ul>
+									<p>If you are at all familiar with revision control systems, you should be able to get up and running with Mercurial in less than five minutes. Even if not, it will take no more than a
+									few minutes longer. Mercurial's command and feature sets are generally uniform and consistent, so you can keep track of a few general rules instead of a host of exceptions.
+									</p>
+									<p>On a small project, you can start working with Mercurial in moments. Creating new changes and branches; transferring changes around (whether locally or over a network); and history
+									and status operations are all fast. Mercurial attempts to stay nimble and largely out of your way by combining low cognitive overhead with blazingly fast operations.
+									</p>
+									<p>The usefulness of Mercurial is not limited to small projects: it is used by projects with hundreds to thousands of contributors, each containing tens of thousands of files and hundreds
+									of megabytes of source code.
+									</p>
+									<p>If the core functionality of Mercurial is not enough for you, it's easy to build on. Mercurial is well suited to scripting tasks, and its clean internals and implementation in Python
+									make it easy to add features in the form of extensions. There are a number of popular and useful extensions already available, ranging from helping to identify bugs to improving performance.
+									</p>
+									<h4>Mercurial compared with other tools</h4>
+									<p><strong>Subversion</strong></p>
+									<p>Subversion and Mercurial have similarly named commands for performing the same operations, so if you're familiar with one, it is easy to learn to use the other. Both tools are portable
+									to all popular operating systems.
+									</p>
+									<p>Mercurial can import revision history from a Subversion repository. It can also export revision history to a Subversion repository. This makes it easy to "test the waters" and use Mercurial
+									and Subversion in parallel before deciding to switch. History conversion is incremental, so you can perform an initial conversion, then small additional conversions afterwards to bring in new changes.
+									</p>
+									<p><strong>Git</strong></p>
+									<p>In terms of performance, Git is extremely fast. In several cases, it is faster than Mercurial, at least on Linux, while Mercurial performs better on other operations. However, on Windows, the
+									performance and general level of support that Git provides is, at the time of writing, far behind that of Mercurial.
+									</p>
+									<p>While a Mercurial repository needs no maintenance, a Git repository requires frequent manual "repacks" of its metadata. Without these, performance degrades, while space usage grows rapidly. A
+									server that contains many Git repositories that are not rigorously and frequently repacked will become heavily disk-bound during backups, and there have been instances of daily backups taking far
+									longer than 24 hours as a result. A freshly packed Git repository is slightly smaller than a Mercurial repository, but an unpacked repository is several orders of magnitude larger.
+									</p>
+									<p>The core of Git is written in C. Many Git commands are implemented as shell or Perl scripts, and the quality of these scripts varies widely. I have encountered several instances where scripts
+									charged along blindly in the presence of errors that should have been fatal.
+									</p>
+									<p>Mercurial can import revision history from a Git repository.
+									</p>
+									<p><strong>CVS</strong></p>
+									<p>It has a centralised client/server architecture. It does not group related file changes into atomic commits, making it easy for people to "break the build": one person can successfully commit
+									part of a change and then be blocked by the need for a merge, causing other people to see only a portion of the work they intended to do. This also affects how you work with project history. If you
+									want to see all of the modifications someone made as part of a task, you will need to manually inspect the descriptions and timestamps of the changes made to each file involved (if you even know what
+									those files were).
+									</p>
+									<p>CVS has a muddled notion of tags and branches that I will not attempt to even describe. It does not support renaming of files or directories well, making it easy to corrupt a repository. It has
+									almost no internal consistency checking capabilities, so it is usually not even possible to tell whether or how a repository is corrupt. I would not recommend CVS for any project, existing or new.
+									</p>
+									<p>Mercurial can import CVS revision history. However, there are a few caveats that apply; these are true of every other revision control tool's CVS importer, too. Due to CVS's lack of atomic changes
+									and unversioned filesystem hierarchy, it is not possible to reconstruct CVS history completely accurately; some guesswork is involved, and renames will usually not show up. Because a lot of advanced
+									CVS administration has to be done by hand and is hence error-prone, it's common for CVS importers to run into multiple problems with corrupted repositories (completely bogus revision timestamps and
+									files that have remained locked for over a decade are just two of the less interesting problems I can recall from personal experience).
+			        	        </div>
+			        	    </div>
+			        	</div>
+			    	</div>
+			    </div>
+			</div>
+
+			<!-- footer -->
+			<footer class="row">
+				<div class="panel-footer text-center">
+					<p><small>Content for this page borrowed from several sites including<br>
+					git.scm.com, www.linuxdevcenter.com, en.wikipedia.org<br>
+					svnbook.red-bean.com, hgbook.red-bean.com<br>
+					<span class="glyphicon glyphicon-copyright-mark"></span>Geek to Geek, LLC  2014;  krr22@njit.edu<br>
+					Amissville, VA 20106</small></p>
+				</div>
+  			</footer>
+    	</div>  <!-- end container -->
+
+    	<!-- javascript -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/G2G.js"></script>
+    </body>
+</html>
