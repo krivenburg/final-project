@@ -90,7 +90,7 @@
 
 								echo '<td>' . $row['forum_topic_title'] . '</td>';
 
-								echo '<td>' . $row['forum_topic_content'] . '</td>';
+								echo '<td style="width:100px">' . $row['forum_topic_content'] . '</td>';
 
 								echo '<td>' . $row['forum_topic_create_date'] . '</td>';
 
